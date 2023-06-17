@@ -1,11 +1,11 @@
-About r-multilevel
-==================
+About r-multilevel-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-multilevel-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cran.r-project.org/web/packages/multilevel/index.html
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-multilevel-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools used by organizational researchers for the analysis of multilevel data. Includes four broad sets of tools. First, functions for estimating within-group agreement and reliability indices. Second, functions for manipulating multilevel and longitudinal (panel) data. Third, simulations for estimating power and generating multilevel data. Fourth, miscellaneous functions for estimating reliability and performing simple calculations and data transformations.
 
