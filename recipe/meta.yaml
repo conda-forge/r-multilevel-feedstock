@@ -1,7 +1,6 @@
 {% set version = '2.7' %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-multilevel
@@ -14,8 +13,7 @@ source:
   sha256: b15c1f945d6600cf4efbe7fb40d1f6617bdfbd8e9d881923598d322bf0c04737
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
