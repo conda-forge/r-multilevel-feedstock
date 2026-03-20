@@ -1,19 +1,19 @@
-{% set version = "2.7.1" %}
+{% set version = "2.8" %}
 
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-multilevel
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/multilevel_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/multilevel/multilevel_{{ version }}.tar.gz
-  sha256: 317c894bdb21571d3ed396057f2eaf588b5bfae82610d6329dc1dcafee16f91f
+  sha256: f837e351e90bf5b18c71f114e09812d0f638157bc722a7c0c7b645d258c6e195
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,8 +41,8 @@ test:
 about:
   home: https://cran.r-project.org/web/packages/multilevel/index.html
   license: GPL-2.0-or-later
-  summary: Tools used by organizational researchers for the analysis of multilevel data. Includes four broad sets of tools. First, functions for estimating within-group agreement and reliability indices. Second, functions for manipulating multilevel and longitudinal (panel) data. Third, simulations for estimating power and
-    generating multilevel data. Fourth, miscellaneous functions for estimating reliability and performing simple calculations and data transformations.
+  summary: Tools used by organizational researchers for the analysis of multilevel data. Includes four broad sets of tools. First, functions for estimating within-group agreement and reliability indices. Second, functions for manipulating multilevel and longitudinal (panel) data. Third, simulations for estimating power
+    and generating multilevel data. Fourth, miscellaneous functions for estimating reliability and performing simple calculations and data transformations.
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
 
